@@ -1,0 +1,162 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {},
+        "version": "",
+        "corpus": "",
+        "annotation_tools": "",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": ""
+      },
+      "namespace": "scaper",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 30.0,
+          "value": {
+            "label": "brownian",
+            "source_file": "/scratch/ci411/spokenweb/scaper_files/background/brownian/long_brownian.wav",
+            "source_time": 0,
+            "event_time": 0,
+            "event_duration": 30,
+            "snr": 0,
+            "role": "background",
+            "pitch_shift": null,
+            "time_stretch": null
+          },
+          "confidence": 1.0
+        },
+        {
+          "time": 13.207587216494225,
+          "duration": 9.288,
+          "value": {
+            "label": "commonvoice_wav",
+            "source_file": "/scratch/ci411/spokenweb/scaper_files/foreground/commonvoice_wav/002da816d15183ee2cff76bd7c46823a6c5ddc4f9a5f532f30f694f602a1df197ef123d71130150b86b1cae2b105382477faa70a33212fd022bc70e6e53ba3b7.wav",
+            "source_time": 0,
+            "event_time": 13.207587216494225,
+            "event_duration": 9.288,
+            "snr": 3.0,
+            "role": "foreground",
+            "pitch_shift": 1,
+            "time_stretch": 1
+          },
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {
+        "scaper": {
+          "duration": 30,
+          "fg_path": "/scratch/ci411/spokenweb/scaper_files/foreground/",
+          "bg_path": "/scratch/ci411/spokenweb/scaper_files/background/",
+          "fg_spec": [
+            [
+              [
+                "const",
+                "commonvoice_wav"
+              ],
+              [
+                "choose",
+                []
+              ],
+              [
+                "const",
+                0
+              ],
+              [
+                "uniform",
+                10,
+                20
+              ],
+              [
+                "const",
+                10
+              ],
+              [
+                "const",
+                3.0
+              ],
+              "foreground",
+              [
+                "const",
+                1
+              ],
+              [
+                "const",
+                1
+              ]
+            ]
+          ],
+          "bg_spec": [
+            [
+              [
+                "const",
+                "brownian"
+              ],
+              [
+                "const",
+                "/scratch/ci411/spokenweb/scaper_files/background/brownian/long_brownian.wav"
+              ],
+              [
+                "const",
+                0
+              ],
+              [
+                "const",
+                0
+              ],
+              [
+                "const",
+                30
+              ],
+              [
+                "const",
+                0
+              ],
+              "background",
+              null,
+              null
+            ]
+          ],
+          "fg_labels": [
+            "commonvoice_wav"
+          ],
+          "bg_labels": [
+            "brownian",
+            "park",
+            "restaurant",
+            "street"
+          ],
+          "protected_labels": [],
+          "ref_db": -20,
+          "n_channels": 1,
+          "fade_in_len": 0.01,
+          "fade_out_len": 0.01,
+          "n_events": 1,
+          "polyphony_max": 1,
+          "polyphony_gini": 0.30966889593826186,
+          "allow_repeated_label": true,
+          "allow_repeated_source": true,
+          "reverb": null,
+          "scaper_version": "1.0.0"
+        }
+      },
+      "time": 0,
+      "duration": 30
+    }
+  ],
+  "file_metadata": {
+    "title": "",
+    "artist": "",
+    "release": "",
+    "duration": 30,
+    "identifiers": {},
+    "jams_version": "0.3.3"
+  },
+  "sandbox": {}
+}

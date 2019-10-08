@@ -11,6 +11,7 @@ module load anaconda3/4.3.1
 source activate py3.5
 module load ffmpeg/intel/3.2.2
 module load sox/intel/14.4.2 
+module load portaudio19/gnu/20140130
 #module load jupyter-kernels/py2.7
 #module load jupyter-kernels/py3.5
 

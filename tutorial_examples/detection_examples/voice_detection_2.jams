@@ -1,0 +1,162 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {},
+        "version": "",
+        "corpus": "",
+        "annotation_tools": "",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": ""
+      },
+      "namespace": "scaper",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 10.0,
+          "value": {
+            "label": "park",
+            "source_file": "/scratch/ci411/spokenweb/scaper_files/background/park/268903__yonts__city-park-tel-aviv-israel.wav",
+            "source_time": 46.951995,
+            "event_time": 0,
+            "event_duration": 10.0,
+            "snr": 0,
+            "role": "background",
+            "pitch_shift": null,
+            "time_stretch": null
+          },
+          "confidence": 1.0
+        },
+        {
+          "time": 0.8789047139725203,
+          "duration": 3.288,
+          "value": {
+            "label": "commonvoice_wav",
+            "source_file": "/scratch/ci411/spokenweb/scaper_files/foreground/commonvoice_wav/006d8e93217ebfade9447770fa5c5409b0fdb4294b09be0d6049b192625e2ff91ab131b40e9876c5dedfd94dcbecb2036136dd5af651ffb82b31d825d548692f.wav",
+            "source_time": 0,
+            "event_time": 0.8789047139725203,
+            "event_duration": 3.288,
+            "snr": 1.666666666666666,
+            "role": "foreground",
+            "pitch_shift": 1,
+            "time_stretch": 1
+          },
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {
+        "scaper": {
+          "duration": 10.0,
+          "fg_path": "/scratch/ci411/spokenweb/scaper_files/foreground/",
+          "bg_path": "/scratch/ci411/spokenweb/scaper_files/background/",
+          "fg_spec": [
+            [
+              [
+                "const",
+                "commonvoice_wav"
+              ],
+              [
+                "choose",
+                []
+              ],
+              [
+                "const",
+                0
+              ],
+              [
+                "uniform",
+                0,
+                10
+              ],
+              [
+                "const",
+                10
+              ],
+              [
+                "const",
+                1.666666666666666
+              ],
+              "foreground",
+              [
+                "const",
+                1
+              ],
+              [
+                "const",
+                1
+              ]
+            ]
+          ],
+          "bg_spec": [
+            [
+              [
+                "choose",
+                []
+              ],
+              [
+                "choose",
+                []
+              ],
+              [
+                "uniform",
+                0,
+                60
+              ],
+              [
+                "const",
+                0
+              ],
+              [
+                "const",
+                10.0
+              ],
+              [
+                "const",
+                0
+              ],
+              "background",
+              null,
+              null
+            ]
+          ],
+          "fg_labels": [
+            "commonvoice_wav"
+          ],
+          "bg_labels": [
+            "park",
+            "restaurant",
+            "street"
+          ],
+          "protected_labels": [],
+          "ref_db": -20,
+          "n_channels": 1,
+          "fade_in_len": 0.01,
+          "fade_out_len": 0.01,
+          "n_events": 1,
+          "polyphony_max": 1,
+          "polyphony_gini": 0.3290020395074785,
+          "allow_repeated_label": true,
+          "allow_repeated_source": true,
+          "reverb": null,
+          "scaper_version": "1.0.0"
+        }
+      },
+      "time": 0,
+      "duration": 10.0
+    }
+  ],
+  "file_metadata": {
+    "title": "",
+    "artist": "",
+    "release": "",
+    "duration": 10.0,
+    "identifiers": {},
+    "jams_version": "0.3.3"
+  },
+  "sandbox": {}
+}
